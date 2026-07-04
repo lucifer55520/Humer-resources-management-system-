@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Profile</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:#f4f4f4;
+        padding:30px;
+    }
+
+    .container{
+        max-width:800px;
+        margin:auto;
+        background:#fff;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.2);
+        overflow:hidden;
+    }
+
+    .header{
+        background:#007BFF;
+        color:#fff;
+        text-align:center;
+        padding:20px;
+    }
+
+    .profile{
+        display:flex;
+        align-items:center;
+        gap:20px;
+        padding:20px;
+        border-bottom:1px solid #ddd;
+    }
+
+    .profile img{
+        width:120px;
+        height:120px;
+        border-radius:50%;
+        border:3px solid #007BFF;
+    }
+
+    .section{
+        padding:20px;
+        border-bottom:1px solid #ddd;
+    }
+
+    .section h3{
+        color:#007BFF;
+        margin-bottom:10px;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+    }
+
+    table td{
+        padding:8px;
+        border-bottom:1px solid #eee;
+    }
+
+    ul{
+        padding-left:20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h2>Employee Profile</h2>
+    </div>
+
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+        <div>
+            <h2>Soumyadeep Mondal</h2>
+            <p>Employee ID: EMP001</p>
+            <p>Department: Human Resources</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Personal Details</h3>
+        <table>
+            <tr><td>Full Name</td><td>Soumyadeep Mondal</td></tr>
+            <tr><td>Date of Birth</td><td>01 January 2000</td></tr>
+            <tr><td>Gender</td><td>Male</td></tr>
+            <tr><td>Phone</td><td>+91 9876543210</td></tr>
+            <tr><td>Email</td><td>soumyadeep@email.com</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Job Details</h3>
+        <table>
+            <tr><td>Designation</td><td>HR Executive</td></tr>
+            <tr><td>Department</td><td>Human Resources</td></tr>
+            <tr><td>Joining Date</td><td>10 June 2024</td></tr>
+            <tr><td>Manager</td><td>Rahul Sharma</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Salary Structure</h3>
+        <table>
+            <tr><td>Basic Salary</td><td>₹30,000</td></tr>
+            <tr><td>Allowances</td><td>₹8,000</td></tr>
+            <tr><td>Deductions</td><td>₹2,000</td></tr>
+            <tr><td>Net Salary</td><td>₹36,000</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Documents</h3>
+        <ul>
+            <li>Appointment Letter</li>
+            <li>Aadhaar Card</li>
+            <li>PAN Card</li>
+            <li>Educational Certificates</li>
+            <li>Salary Slip</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
