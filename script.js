@@ -1,6 +1,4 @@
-// -----------------------------------------------------
-// 1. Navigation & Tab Switching
-// -----------------------------------------------------
+
 function switchTab(tabId) {
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     
