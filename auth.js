@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.getElementById('signupForm');
 
     // -----------------------------------------------------
-    // 1. Tab Switching Logic (Sign In এবং Sign Up এর মধ্যে টগল করা)
+    // 1. Tab Switching Logic
     // -----------------------------------------------------
     function switchTab(mode) {
         if (mode === 'login') {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // -----------------------------------------------------
     if (loginForm) {
         loginForm.addEventListener('submit', async (e) => {
-            e.preventDefault(); // ফর্মের ডিফল্ট রিলোড বন্ধ করা
+            e.preventDefault(); //
 
             const email = document.getElementById('login-email').value;
             const password = document.getElementById('login-password').value;
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // --- FUTURE API CONNECTION (আপনার Node.js সার্ভারের সাথে যুক্ত করার জন্য) ---
+            // --- FUTURE API CONNECTION
             /*
             try {
                 const response = await fetch('http://localhost:3000/api/employees/login', {
@@ -66,8 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const data = await response.json();
                 
-                if (response.ok) {
-                    // ডেটাবেস থেকে পাওয়া আসল নাম লোকাল স্টোরেজে সেভ করা
+                if (response.ok) { 
                     localStorage.setItem('loggedInUser', data.employee.name);
                     localStorage.setItem('loggedInRole', data.employee.role || 'Employee');
                     localStorage.setItem('loggedInEmail', data.employee.email);
@@ -81,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             */
 
-            // --- PROTOTYPE MODE: সরাসরি ড্যাশবোর্ডে রিডাইরেক্ট করা হচ্ছে ---
+            // --- PROTOTYPE MODE:
             const namePart = email.split('@')[0];
             const formattedName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
             
@@ -95,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // -----------------------------------------------------
-    // 3. Sign Up Logic (নতুন ইউজার রেজিস্ট্রেশন)
+    // 3. Sign Up Logic
     // -----------------------------------------------------
     if (signupForm) {
         signupForm.addEventListener('submit', async (e) => {
@@ -116,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // --- FUTURE API CONNECTION (আপনার Node.js সার্ভারের সাথে যুক্ত করার জন্য) ---
+            // --- FUTURE API CONNECTION
             /*
             try {
                 const response = await fetch('http://localhost:3000/api/employees/signup', {
@@ -142,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             */
 
-            // --- PROTOTYPE MODE: সরাসরি ড্যাশবোর্ডে রিডাইরেক্ট করা হচ্ছে ---
+            // --- PROTOTYPE MODE:
             localStorage.setItem('loggedInUser', name);
             localStorage.setItem('loggedInEmpId', empId);
             localStorage.setItem('loggedInEmail', email);
