@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // -----------------------------------------------------
     // 2. Login Logic
-    // -----------------------------------------------------
+  
     if (loginForm) {
         loginForm.addEventListener('submit', async (e) => {
             e.preventDefault(); //
