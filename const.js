@@ -1,5 +1,5 @@
 const express = require("express");
-const fs = require("fs"); // File system module to read/write files
+const fs = require("fs");
 const app = express();
 
 app.use(express.json());
@@ -42,7 +42,7 @@ app.get("/api/employees/:id", (req, res) => {
 
 app.post("/api/employees/signup", (req, res) => {
     const employees = getEmployees();
-    const newEmployee = req.body; // Frontend থেকে আসা ডেটা
+    const newEmployee = req.body;
     
     
     newEmployee.id = "EMP" + Date.now(); 
